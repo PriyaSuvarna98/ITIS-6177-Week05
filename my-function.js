@@ -1,4 +1,4 @@
 export const handler = async (event) => {
-    const response = 'Anushka says ' + event.keyword;
+    const response = 'Priya says ' + event.keyword;
     return response;
   };
