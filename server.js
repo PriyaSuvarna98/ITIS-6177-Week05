@@ -280,7 +280,7 @@ app.post('/company', (req, res) => {
 
 /**
  * @swagger
- * /comany:
+ * /company:
  *    delete:
  *      description: deletes company
  *      consumes:
@@ -569,7 +569,7 @@ app.get('/say', async (req, res) => {
 
             var keyword = req.query.keyword;
 
-            await axios.get(`https://9gn19mnqx1.execute-api.us-east-2.amazonaws.com/main?keyword=` + keyword)
+            await axios.get(`https://vi7kd7jlq5.execute-api.us-east-2.amazonaws.com/main/say?keyword=` + keyword)
             .then(function (response) {
                 res.json(response.data);
             })
